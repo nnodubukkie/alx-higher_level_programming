@@ -7,7 +7,7 @@
  """
 
 
-def Fizzbuzz():
+def fizzbuzz():
     for number in range(1, 101):
         if number % 3 == 0 and number % 5 == 0:
             print("FizzBuzz ", end="")
@@ -15,5 +15,5 @@ def Fizzbuzz():
             print("Fizz ", end="")
         elif number % 5 == 0:
             print("Buzz ", end="")
-        else:
+        else;
             print("{} ".format(number), end="")
