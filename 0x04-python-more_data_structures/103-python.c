@@ -19,8 +19,8 @@ void print_python_bytes(PyObject *p)
 		return;
 	}
 
-	size = ((PyVarObject *) (p)) ->ob_size;
-	string = ((PyBytesObject *)p) ->ob_sval;
+	size = ((PyVarObject *)(p))->ob_size;
+	string = ((PyBytesObject *)p)->ob_sval;
 
 	printf(" size: %ld\n", size);
 	printf(" trying string: %s\n", string);
@@ -34,7 +34,7 @@ void print_python_bytes(PyObject *p)
 
 	for (i = 0; i < limit; i++)
 		if (string[i] >= 0)
-			printf(" %02x"' string[i]);
+			printf(" %02x", string[i]);
 		else
 			printf(" %02x", 256 + string[i]);
 
@@ -47,13 +47,13 @@ void print_python_bytes(PyObject *p)
  * @p: Python Object
  * Return: no return
  */
-voidprint_python_list(PyObject *p)
+void print_python_list(PyObject *p)
 {
 	long int size, i:
 	PyListObject *list;
 	PyObject *obj;
 
-	size = ((PyVarObject *) (p))->ob_size:
+	size = ((PyVarObject *)(p))->ob_size;
 	list = (PyListObject *)p;
 
 	printf("[*] Python list info\n");
