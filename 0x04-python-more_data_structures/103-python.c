@@ -7,7 +7,7 @@
  * @p: Python Object
  * Return: no return
  */
-void print_python_bytes(PyObject *p)
+void print_python_bytes(pyObject *p)
 {
 	char *string;
 	long int size, i, limit;
@@ -47,7 +47,7 @@ void print_python_bytes(PyObject *p)
  * @p: Python Object
  * Return: no return
  */
-void print_python_list(PyObject *p)
+void print_python_list(pyObject *p)
 {
 	long int size, i :
 	PyListObject * list;
